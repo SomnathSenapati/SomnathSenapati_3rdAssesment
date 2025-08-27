@@ -13,7 +13,7 @@ exports.getBlog = async (req, res) => {
 exports.createBlog = async (req, res) => {
   const { title, content } = req.body;
   const blog = new Blog({
-    title,
+    title, 
     content,
     author: req.user.id,
     image: req.file ? "/uploads/" + req.file.filename : null,

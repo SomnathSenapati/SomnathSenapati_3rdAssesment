@@ -44,6 +44,13 @@ app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/blogs", blogRoutes);
 
+// admin routes
+const adminRoutes = require("./app/routes/admin/adminRoutes");
+app.use("/", adminRoutes);
+
+const blogRoute = require("./app/routes/admin/blogRoute");
+app.use("/blog", blogRoute);
+
 // EJS pages
 app.get("/", (req, res) => res.redirect("/blogs"));
 

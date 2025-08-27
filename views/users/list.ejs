@@ -1,0 +1,27 @@
+<%- include("../layouts/header", { title: "Manage Users" }) %>
+
+<h2>Users</h2>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th>Role</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% users.forEach(u => { %>
+      <tr>
+        <td><%= u.email %></td>
+        <td><%= u.role %></td>
+        <td>
+          <form action="/api/users/<%= u._id %>?_method=DELETE" method="POST" style="display:inline;">
+            <button class="btn btn-danger btn-sm">Delete</button>
+          </form>
+        </td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<%- include("../layouts/footer") %>

@@ -1,0 +1,54 @@
+<!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+  <!-- Brand -->
+  <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+    <div class="sidebar-brand-icon rotate-n-15">
+      <i class="fas fa-coins"></i>
+    </div>
+    <div class="sidebar-brand-text mx-3">BlogPost Admin</div>
+  </a>
+
+  <hr class="sidebar-divider my-0" />
+
+  <!-- Dashboard -->
+  <li class="nav-item active">
+    <a class="nav-link" href="/">
+      <i class="fas fa-tachometer-alt"></i>
+      <span>Dashboard</span>
+    </a>
+  </li>
+
+  <hr class="sidebar-divider" />
+
+  <!-- Heading -->
+  <div class="sidebar-heading">Interface</div>
+
+  <!-- User -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseHome" aria-expanded="false" aria-controls="collapseHome">
+      <i class="fas fa-user"></i>
+      <span>User</span>
+    </a>
+    <div id="collapseHome" class="collapse" aria-labelledby="headingHome" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+        <h6 class="collapse-header">User List:</h6>
+        <a class="collapse-item" href="/regster">Register</a>
+        <a class="collapse-item" href="/login">Login</a>
+      </div>
+    </div>
+  </li>
+
+  <!-- Blogs -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCourse" aria-expanded="false" aria-controls="collapseCourse">
+      <i class="fas fa-book"></i>
+      <span>Blogs</span>
+    </a>
+    <div id="collapseCourse" class="collapse" aria-labelledby="headingCourse" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+        <h6 class="collapse-header">Services List:</h6>
+        <a class="collapse-item" href="/blog/list">List</a>
+      </div>
+    </div>
+  </li>
+</ul>

@@ -1,0 +1,20 @@
+<%- include("../layouts/header", { title: "Register" }) %>
+
+<h2>Register</h2>
+<form method="POST" action="/api/auth/register" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label>Email</label>
+    <input type="email" name="email" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label>Password</label>
+    <input type="password" name="password" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label>Profile Image</label>
+    <input type="file" name="profileImage" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-primary">Register</button>
+</form>
+
+<%- include("../layouts/footer") %>
